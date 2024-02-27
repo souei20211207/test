@@ -4,16 +4,45 @@
 	<meta charset="utf-8">
 	<title>test</title>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="rs.js"></script>
 </head>
 <body>
-	<p id="test"></p>
-	<script>
-		let test=document.getElementById('test');
-		$.get('data.txt', (data) => {
-			var datalist=data.split("\n")
-			test.innerHTML=datalist[0];
-		});
-	</script>
+	<table>
+		<tr>
+			<td>職業</td>
+			<td>
+				<select id="job">
+					<option value="剣士" selected>剣士</option>
+					<option value="戦士">戦士</option>
+				</select>
+			</td>
+			<td>レベル</td>
+			<td>
+				<input type="number" id="level" min="1" max="2000" value="1500">
+			</td>
+		</tr>
+		<tr>
+			<td>武器</td>
+			<td>
+				<input type="text" id="buki" list="codeType" autocomplete="off"/>
+			</td>
+		</tr>
+	</table>
+	
+	<datalist id="codeType">
+	</datalist>
+	
 </body>
-
+<script>
+	let job=document.getElementById('job');
+	let codeType=document.getElementById('codeType');
+	var i;
+	var re;
+	var elem;
+	makebukilist()
+	window.addEventListener("input",function(){
+    	makebukilist()
+    });
+	
+</script>
 </html>
