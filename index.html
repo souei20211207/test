@@ -10,7 +10,8 @@
 	<script>
 		let test=document.getElementById('test');
 		$.get('data.txt', (data) => {
-			test.innerHTML=data;
+			var datalist=data.split("\n")
+			test.innerHTML=datalist[0];
 		});
 	</script>
 </body>
