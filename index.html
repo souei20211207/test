@@ -8,9 +8,9 @@
 	<p id="test"></p>
 </body>
 <script type="module">
-	import data from "./data.json" assert { type: "json" };
+	import data from "./data.txt";// assert { type: "json" };
 	console.log(data);
 	let test=document.getElementById('test');
-	test.innerHTML=data.id;
+	test.innerHTML=data;
 </script>
 </html>
