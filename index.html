@@ -7,11 +7,14 @@
 <body>
 	<p id="test"></p>
 	<script>
-		var data = await fetch('data.txt');
 		let test=document.getElementById('test');
-		if (data.ok) {
-			var datatext = await data.text();
-			test.innerHTML=datatext;
+		logMovies()
+		async function logMovies() {
+			var data = await fetch('data.txt');
+			if (data.ok) {
+				var datatext = await data.text();
+				test.innerHTML=datatext;
+			}
 		}
 	</script>
 </body>
