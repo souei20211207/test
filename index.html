@@ -7,11 +7,12 @@
 <body>
 	<p id="test"></p>
 </body>
-<script type="module">
+<script>
 	var data = await fetch('data.txt');
 	let test=document.getElementById('test');
 	if (data.ok) {
 		var datatext = await data.text();
 		test.innerHTML=datatext;
+	}
 </script>
 </html>
