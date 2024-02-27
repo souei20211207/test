@@ -3,19 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<title>test</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 	<p id="test"></p>
 	<script>
 		let test=document.getElementById('test');
-		logMovies()
-		async function logMovies() {
-			var data = await fetch('data.txt');
-			if (data.ok) {
-				var datatext = await data.text();
-				test.innerHTML=datatext;
-			}
-		}
+		$.get('data.txt', (data) => {
+			test.innerHTML=data;
+		});
 	</script>
 </body>
 
