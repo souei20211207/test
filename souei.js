@@ -7,6 +7,7 @@ var close = document.getElementById('close');
 var selectid=document.getElementById('selectid');
 
 var kkk;
+var l=ids.length;
 
 f2();
 
@@ -36,8 +37,8 @@ function f2(){
 	kkk=selectid.value;
 	for(i=0;i<l;i++){
 		if(kkk==data1[i]){
-			id.innerHTML=data1[i];
-			pass.innerHTML=data2[i];
+			id.innerHTML=ids[i];
+			pass.innerHTML=passes[i];
 		};
 	};
 };
