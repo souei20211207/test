@@ -36,7 +36,7 @@ function f1(){
 function f2(){
 	kkk=selectid.value;
 	for(i=0;i<l;i++){
-		if(kkk==data1[i]){
+		if(kkk==ids[i]){
 			id.innerHTML=ids[i];
 			pass.innerHTML=passes[i];
 		};
