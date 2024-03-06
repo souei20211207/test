@@ -52,5 +52,5 @@ function f2(){
 
 function f3(){
 	y=window.pageYOffset;
-	rslogin.style="top:"+String(y)+"px;";
+	rslogin.style="display: block;position: absolute;background-color: #f9f9f9;border: 1px solid #ccc;z-index: 1000;left:35vw;top:"+String(y)+"px;";
 };
