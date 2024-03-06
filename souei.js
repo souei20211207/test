@@ -64,5 +64,8 @@ function f4(){
 	if(String(kkk)=="null"){
 		document.querySelector("#main > div > div.layout.layout-content.touch-no.justify-center.align-start > div.layout.app-left.column.justify-start.align-end.wrap > div.layout.frame.shrink.column.justify-space-between.align-content-space-between > div > div.layout.regist.mt-0.column.justify-start.align-content-center > button").click();
 	};
-	document.querySelector("#main > div > div.layout.layout-content.touch-no.justify-center.align-start > div.layout.app-left.column.justify-start.align-end.wrap > div.layout.frame.shrink.column.justify-space-between.align-content-space-between > div > div.layout.member-box.column.justify-start.align-content-center > button").click();
+	kkk=document.getElementById('rslogin');
+	window.location.href = "https://www.redstoneonline.jp/signin/1?returnurl=https%3A%2F%2Fwww.redstoneonline.jp%2F";
+	y=document.querySelector('body');
+	y.prepend(kkk);
 };
