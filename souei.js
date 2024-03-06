@@ -5,6 +5,7 @@ var souei1=document.getElementById('souei1');
 var souei2=document.getElementById('souei2');
 var close = document.getElementById('close');
 var selectid=document.getElementById('selectid');
+var login=document.getElementById('login');
 
 var kkk;
 var l=ids.length;
@@ -33,6 +34,10 @@ window.addEventListener('scroll',(e) => {
 	f3();
 });
 
+login.addEventListener('click', (e) => {
+	f1();
+});
+
 function f1(){
 	rslogin.remove();
 	souei1.remove();
@@ -52,4 +57,9 @@ function f2(){
 function f3(){
 	y=window.pageYOffset;
 	rslogin.style="display: block;position: absolute;background-color: #f9f9f9;border: 1px solid #ccc;z-index: 1000;left:35vw;top:"+String(y)+"px;";
+};
+
+function f4(){
+	kkk=document.querySelector("#main > div > div.layout.layout-content.touch-no.justify-center.align-start > div.layout.app-left.column.justify-start.align-end.wrap > div.layout.frame.shrink.column.justify-space-between.align-content-space-between > div > div.layout.member-box.column.justify-start.align-content-center > button > span > span");
+	console.log(kkk);
 };
