@@ -35,7 +35,7 @@ window.addEventListener('scroll',(e) => {
 });
 
 login.addEventListener('click', (e) => {
-	f1();
+	f4();
 });
 
 function f1(){
