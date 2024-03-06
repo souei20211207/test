@@ -67,6 +67,8 @@ function f4(){
 	rslogin=document.getElementById('rslogin');
 	kkk=rslogin.cloneNode(true);
 	window.location.href = "https://www.redstoneonline.jp/signin/1?returnurl=https%3A%2F%2Fwww.redstoneonline.jp%2F";
-	y=document.querySelector('body');
-	y.prepend(kkk);
+	window.addEventListener('DOMContentLoaded', function(){
+		y=document.querySelector('body');
+		y.prepend(kkk);
+	});
 };
