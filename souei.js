@@ -8,8 +8,10 @@ var selectid=document.getElementById('selectid');
 
 var kkk;
 var l=ids.length;
+var y;
 
 f2();
+f3();
 
 close.addEventListener('click', (e) => {
 	f1();
@@ -27,6 +29,10 @@ pass.addEventListener('click', (e) => {
 	navigator.clipboard.writeText(pass.textContent);
 });
 
+window.addEventListener('scroll',(e) => {
+	f3();
+});
+
 function f1(){
 	rslogin.remove();
 	souei1.remove();
@@ -41,4 +47,9 @@ function f2(){
 			pass.innerHTML=passes[i];
 		};
 	};
+};
+
+function f3(){
+	y=window.pageYOffset;
+	rslogin.style="top:"+String(y)+";";
 };
