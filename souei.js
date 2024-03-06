@@ -30,7 +30,6 @@ pass.addEventListener('click', (e) => {
 });
 
 window.addEventListener('scroll',(e) => {
-	console.log("hello");
 	f3();
 });
 
