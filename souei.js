@@ -63,8 +63,10 @@ function f4(){
 	kkk=document.querySelector("#main > div > div.layout.layout-content.touch-no.justify-center.align-start > div.layout.app-left.column.justify-start.align-end.wrap > div.layout.frame.shrink.column.justify-space-between.align-content-space-between > div > div.layout.member-box.column.justify-start.align-content-center > button > span > span");
 	if(String(kkk)=="null"){
 		document.querySelector("#main > div > div.layout.layout-content.touch-no.justify-center.align-start > div.layout.app-left.column.justify-start.align-end.wrap > div.layout.frame.shrink.column.justify-space-between.align-content-space-between > div > div.layout.regist.mt-0.column.justify-start.align-content-center > button").click();
-	};
-	window.addEventListener('DOMContentLoaded', function(){
+		window.addEventListener('DOMContentLoaded', function(){
+			document.querySelector("#main > div > div.layout.layout-content.touch-no.justify-center.align-start > div.layout.app-left.column.justify-start.align-end.wrap > div.layout.frame.shrink.column.justify-space-between.align-content-space-between > div > div.layout.member-box.column.justify-start.align-content-center > button").click();
+		});
+	}else{
 		document.querySelector("#main > div > div.layout.layout-content.touch-no.justify-center.align-start > div.layout.app-left.column.justify-start.align-end.wrap > div.layout.frame.shrink.column.justify-space-between.align-content-space-between > div > div.layout.member-box.column.justify-start.align-content-center > button").click();
-	});
+	};
 };
